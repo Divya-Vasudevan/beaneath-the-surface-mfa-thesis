@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>SCAN QR CODE</h1>
+    <div id="QR_container">
+      <video muted playsinline id="qr-video"></video>
+    </div>
+    <div class="bottom_menu">
+      <ul>
+        <li>
+          <a href="index.html"><img src="" alt="my garden"/></a>
+        </li>
+        <li>
+          <a href="discover.html"><img src="" alt="discover"/></a>
+        </li>
+        <li>
+          <a href="QR_scan.html"><img src="" alt="scan QR code"/></a>
+        </li>
+        <li>
+          <a href="create.html"><img src="" alt="create"/></a>
+        </li>
+      </ul>
+    </div>
+
+    <script type="module">
+      import QrScanner from "/qr-scanner.min.js";
+      QrScanner.WORKER_PATH = "/qr-scanner-worker.min.js";
+
+      const video = document.getElementById("qr-video");
+      //const camQrResult = document.getElementById("cam-qr-result");
+
+      function setResult(result) {
+        //label.textContent = result;
+        console.log(result);
+        QR_setResult();
+      }
+
+      const scanner = new QrScanner(video, result => setResult(result));
+      scanner.start();
+    </script>
+  </body>
+</html>

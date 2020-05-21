@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body onload="init()">
+    <h1>MY GARDEN</h1>
+    <div id="current_outer">
+      <div id="current_plant"><img id="image" src="https://cdn.glitch.com/3ee2e06f-ab1d-4e38-9cb9-bfe5d037cc08%2Fplant1.png?v=1587043061087"></div>
+    </div>
+
+    <div id="completed_outer">
+      <h1>Completed</h1>
+      <div id="completed_inner">
+        <div class="completed_plants"></div>
+        <div class="completed_plants"></div>
+        <div class="completed_plants"></div>
+        <div class="completed_plants"></div>
+      </div>
+    </div>
+    <div class="bottom_menu">
+      <ul>
+        <li><a href="index.html"><img src="" alt="my garden" /></a></li>
+        <li><a href="discover.html"><img src="" alt="discover" /></a></li>
+        <li><a href="QR_scan.html"><img src="" alt="scan QR code" /></a></li>
+        <li><a href="create.html"><img src="" alt="create" /></a></li>
+      </ul>
+    </div>
+  </body>
+</html>

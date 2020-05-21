@@ -1,0 +1,109 @@
+/* CSS files add styling rules to your content */
+
+html {
+  margin:0;
+  display:flex;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width: 95%;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom_menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #737373;
+  display: flex;
+  align-items: center;
+}
+
+#current_outer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#current_plant {
+  height: 350px;
+  width: 70%;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+#current_plant img 
+{
+ max-width: 70%;
+ max-height: 350px;
+}
+
+#completed_outer {
+  margin-top: 50px;
+  width: 100%;
+  margin-bottom: 110px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#completed_inner{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.completed_plants {
+  background-color: #f2f2f2;
+  height: 250px;
+  width: 45%;
+  margin: 2%;
+}
+
+#QR_container{
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#qr-video {
+  width: 80%;
+}
+
+.content_container {
+  margin-top:20px;
+  width:100%;
+  margin-bottom: 110px;
+}
