@@ -5,7 +5,4 @@ Since the goal was to use multiple Arduino Uno's driven by a raspberry pi that w
 
 The App folder contains the basic wireframe prototype of the app experience. This is a work in progress and at the moment the QR code scanning functionality is working.
 
-<video width="320" height="240" controls>
-  <source src="videos/Apr16-QR_code-plantgrowth.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+Format: ![QR code sequence of images](images/QR-code-app-sequence-01.jpg)
